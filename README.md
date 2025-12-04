@@ -98,7 +98,7 @@ En esta parte de la práctica, el alumno creará un clúster de Kubernetes en Go
     Lo desplegaremos en un Pod con:
 
     ```bash
-    kubectl expose deployment hello-node --type=LoadBalancer -- port=8080
+    kubectl expose deployment hello-node --type=LoadBalancer --port=8080
     ```
 
     Para acceder al servicio:
