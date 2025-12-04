@@ -185,7 +185,7 @@ kubectl logs loadgenerator-<id-pod> --tail 20
 Cuando observe que algún despliegue deja de estar disponible, ejecute el comando:
 
 ```bash
-kubectl hpa <deployment-name> --min 1 --max 10
+kubectl autoscale deployment <deployment-name> --min 1 --max 10
 ```
 
 El comando anterior creará un autoescalador horizontal de Pods (HPA) para el despliegue indicado, con un mínimo de 1 réplica y un máximo de 10 réplicas.
