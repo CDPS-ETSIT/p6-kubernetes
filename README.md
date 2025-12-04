@@ -79,7 +79,7 @@ En esta parte de la práctica, el alumno creará un clúster de Kubernetes en Go
     Este contenedor ya está disponible y lo usaremos para el despliegue en nuestro clúster:
 
     ```bash
-    kubectl create deployment hello-node --image=k8s.gcr.io/echoserver:1.4
+    kubectl create deployment hello-node --image=registry.k8s.io/e2e-test-images/agnhost:2.53 -- /agnhost netexec --http-port=8080
     ```
 
     Podemos verlo con los siguientes comandos:
